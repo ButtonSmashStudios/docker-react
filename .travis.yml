@@ -6,4 +6,4 @@ before_install:
     - docker build -t buttonsmashstudios/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run buttonsmashstudios/docker-react npm run test -- --coverage
+    - docker run buttonsmashstudios/docker-react ./node_modules/.bin/react-scripts test --coverage
